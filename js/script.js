@@ -326,42 +326,33 @@ $( document ).ready(function() {
 	  });
 	});
 	
-	//fade in sections
-	//$(window).scroll( function(){
-//	  $('.menu').each( function(){
-//		  
-//		  var bottom_of_object = $(this).offset().top + 100;
-//		  var bottom_of_window = $(window).scrollTop() + $(window).height();
-//		  
-//		  if( bottom_of_window > bottom_of_object ){
-//			  $(this).addClass('active');
-//			  $(window).unbind('scroll');
-//		  }  
-//		  }); 
-//	  
-//	  });
 
-		  $('.pre-loader').addClass('hide');
-		  $('.callout-wrapper, .header-bg').addClass('active');
+	//$('.pre-loader').addClass('hide');
+	$('.callout-wrapper, .header-bg').addClass('active');
+	
+	//GA Tracking
+	function trackEvent(label){
+		ga('send', 'event', 'LandingPage-2016', 'click', label);
+	}
+	
+	$('#menu-link').click(function(){
+		trackEvent('Menu');	
+	});
+	$('#map-link').click(function(){
+		trackEvent('Find Us');	
+	});
+	$('.facebook').click(function(){
+		trackEvent('Facebook');	
+	});
+	$('.twitter').click(function(){
+		trackEvent('Twitter');	
+	});	
+	$('.instagram').click(function(){
+		trackEvent('Instagram');	
+	});
 	
 
 });
-
-	//header load in after everything is ready
-//	$(window).bind("load", function() {
-//		  $(".window span").each(function (i) {
-//			// store the item around for use in the 'timeout' function
-//			var $item = $(this); 
-//			// execute this function sometime later:
-//			setTimeout(function() { 
-//			  $item.addClass('active');
-//			}, 125*i);
-//			// each element should animate half a second after the last one.
-//		  });
-//		  $('.pre-loader').addClass('hide');
-//		  $('.callout-wrapper, .header-bg').addClass('active');
-//	  });
-	  
 	  $(window).load(function(){  
 		var $menu = $('.menu-wrapper').masonry({
 			itemSelector: '.block',

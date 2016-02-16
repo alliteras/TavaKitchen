@@ -260,7 +260,7 @@ header .pre-loader {
 	text-align:left;
 }
 
-.menu-wrapper ul h4:nth-child(1){
+.menu-wrapper h4:first-of-type{
 	margin-top:-20px;
 }
 
@@ -448,6 +448,7 @@ header .pre-loader {
 	width:34px;
 	height:27px;
 	display:inline-block;
+	background-size:contain;
 }
 .social:nth-child(1){
 	background-image:url(../img/social-facebook-hover.png);
@@ -467,6 +468,8 @@ header .pre-loader {
 
 .social img{
 	transition:ease opacity .5s;
+	width:34px;
+	height:27px;
 }
 
 
