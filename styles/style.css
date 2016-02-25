@@ -279,8 +279,32 @@ header .pre-loader {
 	text-align:center;
 }
 
+.block.two-col .prices.price-headers span{
+	font-size: 10px;
+    line-height: 13px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.price-headers{
+	
+}
+
+.prices {
+    width: 45%;
+	position:absolute;
+	right:0;
+	top:0;
+	left:59%;
+}
+.block.two-col .prices span {
+    padding-left: 11%;
+    text-align: right;
+    width: 23%;
+	float:left;
+}
+
 .block {
-    padding: 45px;
+    padding: 4%;
     text-align: center;
     vertical-align: top;
     width: 48%;
@@ -320,6 +344,7 @@ header .pre-loader {
     line-height: 40px;
     margin: 0 auto;
     width: 100%;
+	position:relative;
 }
 
 .block:nth-child(even){
@@ -510,13 +535,12 @@ footer p{
 	.menu-wrapper h3 {
  	   font-size: 22px;
     	letter-spacing: 1.5px;
-    	padding-bottom: 20px;
+    	padding-bottom: 30px;
 	}
 	.menu-wrapper ul h4:nth-child(1) {
  	   margin-top: 0;
 	}
 	.menu-wrapper .block.two-col .callout {
-		margin-top: -5px;
 	}
 	
 	header {
@@ -629,5 +653,26 @@ footer p{
 	}
 	.header-bg{
 		background-attachment:scroll;	
+	}
+	.prices {
+		position: relative;
+		width: 100%;
+		left:0;
+		padding:10px 0px 20px;
+	}
+	.menu-wrapper .block.two-col .callout.price-headers {
+ 	   padding-bottom: 20px;
+	}
+	.block.two-col .prices span{
+		width:25%;
+		text-align:center;
+		padding-left:0px;
+	}
+	.block.two-col .prices.price-headers span{
+		text-align:center;
+	}
+	.two-col:nth-child(1) p {
+    text-align: left;
+	width:89%;
 	}
   }
